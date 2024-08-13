@@ -39,17 +39,17 @@ class GreetingScreen extends StatelessWidget {
               fontSize: 18.0,
             ),
           ),
-          // Add an image below the new text
+          
           Image.network(
-              'https://picsum.photos/250?image=9'), // Optional: Replace with your image URL or use an asset image.
+              'https://picsum.photos/250?image=9'), 
           SizedBox(
-              height: 20), // Adds some space between the image and the button
+              height: 20), 
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.green, // Green button color
             ),
             onPressed: () {
-              // Show a Snackbar when the button is pressed
+              
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text('Button Pressed!')),
               );
